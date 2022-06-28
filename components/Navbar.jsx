@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {TbLetterZ, TbLetterU} from 'react-icons/tb'
 
 const Navbar = () => {
     const [nav,setNav] = useState(false)
@@ -14,7 +15,12 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-            <Image src="/../public/assets/navLogo.png" alt="Portfolio Logo written in green with a white background, Zain Ul-Abdeen" width='125' height='50' />
+            {/* <Image src="/../public/assets/navLogo.png" alt="Portfolio Logo written in green with a white background, Zain Ul-Abdeen" width='125' height='50' /> */}
+            <div className='tracking-tighter'>
+            <TbLetterZ color='purple' size={25}/>
+            <TbLetterU color='black' size={25}/>
+            </div>
+            
             <div>
                 <ul className='hidden md:flex'>
                     <Link href='/'>
@@ -43,7 +49,11 @@ const Navbar = () => {
             <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
                 <div>
                     <div className='flex w-full items-center justify-between'>
-                        <Image src='/../public/assets/navLogo.png' width='87' height='35' alt='Portfolio Logo written in green with a white background, Zain Ul-Abdeen, Mobile Nav Menu' />
+                        {/* <Image src='/../public/assets/navLogo.png' width='87' height='35' alt='Portfolio Logo written in green with a white background, Zain Ul-Abdeen, Mobile Nav Menu' /> */}
+                        <div className='tracking-tighter'>
+                        <TbLetterZ color='purple' size={25}/>
+                        <TbLetterU color='black' size={25}/>
+                        </div>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <AiOutlineClose />
                         </div>
