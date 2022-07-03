@@ -5,10 +5,29 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { TbLetterZ, TbLetterU } from "react-icons/tb";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/property" ||
+      router.asPath === "/crypto_app" ||
+      router.asPath === "/nextflix_clone" ||
+      router.asPath === "/twitch_clone"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,6 +45,7 @@ const Navbar = () => {
   }, []);
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -33,7 +53,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="#home">
+        <Link href="/#home">
           {/* <Image src="/../public/assets/navLogo.png" alt="Portfolio Logo written in green with a white background, Zain Ul-Abdeen" width='125' height='50' /> */}
           <div className="tracking-tighter cursor-pointer">
             <TbLetterZ color="purple" size={25} />
@@ -41,7 +61,7 @@ const Navbar = () => {
           </div>
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -104,7 +124,7 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="#home">
+              <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Home
                 </li>
