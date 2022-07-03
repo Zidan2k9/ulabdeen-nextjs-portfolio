@@ -22,10 +22,10 @@ const Navbar = () => {
       router.asPath === "/twitch_clone"
     ) {
       setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+      setLinkColor("#12844D");
     } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
+      setNavBg("#12844D");
+      setLinkColor("#E6FBF1");
     }
   }, [router]);
 

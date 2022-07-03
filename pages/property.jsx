@@ -40,30 +40,34 @@ const property = () => {
             nisi cumque fugiat! Nihil omnis, laborum aut deserunt fugiat
             laboriosam delectus et labore.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Web Link</button>
-          <button className="px-8 py-2 mt-4 mr-8">Demo Video</button>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          <button className="px-8 py-2 mt-4 mr-8 text-green-100">
+            Web Link
+          </button>
+          <button className="px-8 py-2 mt-4 mr-8 text-green-100">
+            Demo Video
+          </button>
+          <button className="px-8 py-2 mt-4 mr-8 text-green-100">Code</button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-green-400 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Stack</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-green-800 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-green-800 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Tailwind CSS
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-green-800 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> JavaScript
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-green-800 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-green-800 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Google API
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-green-800 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Zillow API
               </p>
             </div>

@@ -7,9 +7,9 @@ import twitch from "../public/assets/projects/twitch.jpg";
 
 const Work = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-green-white-0">
       <div id="work" className="max-w[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-green-white-8">
           My Work
         </p>
         <h2 className="py-4">Work Experience and Projects</h2>
