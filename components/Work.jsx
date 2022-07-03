@@ -8,7 +8,7 @@ import twitch from "../public/assets/projects/twitch.jpg";
 const Work = () => {
   return (
     <div className="w-full">
-      <div className="max-w[1240px] mx-auto px-2 py-16">
+      <div id="work" className="max-w[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           My Work
         </p>
@@ -33,7 +33,7 @@ const Work = () => {
             workUrl="/netflix_clone"
           />
           <WorkItem
-            title="Twitch"
+            title="Twitch Clone"
             technologies="ReactJS"
             backgroundImg={twitch}
             workUrl="/twitch_clone"
