@@ -12,7 +12,13 @@ import {
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
-  const { register, handleSubmit, errors, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm();
   console.log(errors);
   function onSubmitForm(values) {
     console.log(values);
@@ -74,13 +80,21 @@ const Contact = () => {
               <form onSubmit={handleSubmit(onSubmitForm)}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label
+                      for="name"
+                      name="name"
+                      className="uppercase text-sm py-2"
+                    >
+                      Name
+                    </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className={`border-2 rounded-lg p-3 flex border-gray-300 w-full shadow px-4 placeholder-gray-500 focus:ring-green-500 focus:border-green-500 focus:outline-none focus:ring-2 ${
+                        errors.name ? "ring-2 ring-red-500" : null
+                      }`}
                       type="text"
                       {...register("name", {
                         required: true,
-                        validate: "You must enter your name",
+                        message: "You must enter your name",
                       })}
                     />
                   </div>
@@ -106,9 +120,13 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label for="email" className="uppercase text-sm py-2">
+                    Email
+                  </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className={`border-2 rounded-lg p-3 flex border-gray-300 w-full shadow px-4 placeholder-gray-500 focus:ring-green-500 focus:border-green-500 focus:outline-none focus:ring-2 ${
+                      errors.email ? "ring-2 ring-red-500" : null
+                    }`}
                     type="email"
                     {...register("email", {
                       required: true,
@@ -121,13 +139,21 @@ const Contact = () => {
                         value: 120,
                         message: "This is too long to be an email ",
                       },
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "This needs to be a valid email",
+                      },
                     })}
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
+                  <label for="subject" className="uppercase text-sm py-2">
+                    Subject
+                  </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className={`border-2 rounded-lg p-3 flex border-gray-300 w-full shadow-px-4 placeholder-gray-500 focus:ring-green-500 focus:border-green-500 focus:outline-none focus:ring-2 ${
+                      errors.subject ? "ring-2 ring-red-500" : null
+                    }`}
                     type="text"
                     {...register("subject", {
                       required: true,
@@ -146,7 +172,9 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
-                    className="border-2 rounded-lg p-3 border-gray-300"
+                    className={`border-2 rounded-lg p-3 border-gray-300 w-full shadow-px-4 placeholder-gray-500 focus:ring-green-500 focus:border-green-500 focus:outline-none focus:ring-2 ${
+                      errors.message ? "ring-2 ring-red-500" : null
+                    }`}
                     rows="10"
                     {...register("message", {
                       required: true,
@@ -154,6 +182,11 @@ const Contact = () => {
                       maxLength: {
                         value: 1000,
                         message: "Messages cant be more than 1000 characters",
+                      },
+                      minLength: {
+                        value: 50,
+                        message:
+                          "Messages need to be at least 50 characters long",
                       },
                     })}
                   ></textarea>
