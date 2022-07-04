@@ -91,7 +91,17 @@ const Contact = () => {
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
-                      {...register("phone", { required: false })}
+                      {...register("phone", {
+                        required: false,
+                        minLength: {
+                          value: 10,
+                          message: "Phone number too short",
+                        },
+                        maxLength: {
+                          value: 14,
+                          message: "Phone number too long",
+                        },
+                      })}
                     />
                   </div>
                 </div>
