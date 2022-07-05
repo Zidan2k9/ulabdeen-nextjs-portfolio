@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import {
@@ -11,6 +12,98 @@ import {
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phonenumber, setPhoneNumber] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  //   Form validation
+  const [errors, setErrors] = useState({});
+
+  //   Setting button text
+  // const [buttonText, setButtonText] = useState("Send");
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (name.length <= 0) {
+      tempErrors["name"] = true;
+      isValid = false;
+    }
+    if (email.length <= 0) {
+      tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (subject.length <= 0) {
+      tempErrors["subject"] = true;
+      isValid = false;
+    }
+    if (message.length <= 0) {
+      tempErrors["message"] = true;
+      isValid = false;
+    }
+
+    setErrors({ ...tempErrors });
+    console.log("errors", errors);
+    return isValid;
+  };
+
+  //   const [form, setForm] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let isValidForm = handleValidation();
+
+    if (isValidForm) {
+      // setButtonText("Sending");
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+          email: email,
+          name: name,
+          subject: subject,
+          phonenumber: phonenumber,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        // setButtonText("Send");
+
+        // Reset form fields
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        setPhoneNumber("");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      // setButtonText("Send");
+      // Reset form fields
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
+      setPhoneNumber("");
+    }
+    console.log(name, email, phonenumber, subject, message);
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen bg-green-white-0">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -66,48 +159,101 @@ const Contact = () => {
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  {/* NAME */}
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label htmlFor="name" className="uppercase text-sm py-2">
+                      Name
+                    </label>
                     <input
+                      name="name"
+                      id="name"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      onChange={(e) => {
+                        setName(e.target.value);
+                      }}
+                      required
                     />
                   </div>
+                  {/* PHONE NUMBER (OPTIONAL) */}
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
+                    <label
+                      htmlFor="phonenumber"
+                      className="uppercase text-sm py-2"
+                    >
                       Phone Number
                     </label>
                     <input
+                      name="phonenumber"
+                      id="phonenumber"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      onChange={(e) => {
+                        setPhoneNumber(e.target.value);
+                      }}
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  {/* EMAIL */}
+                  <label htmlFor="email" className="uppercase text-sm py-2">
+                    email
+                  </label>
                   <input
+                    name="email"
+                    id="email"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    required
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
+                  {/* SUBJECT */}
+                  <label htmlFor="subject" className="uppercase text-sm py-2">
+                    Subject
+                  </label>
                   <input
+                    name="subject"
+                    id="subject"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    onChange={(e) => {
+                      setSubject(e.target.value);
+                    }}
+                    required
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  {/* MESSAGE */}
+                  <label htmlFor="message" className="uppercase text-sm py-2">
+                    Message
+                  </label>
                   <textarea
+                    name="message"
+                    id="message"
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                    required
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 bg-green-white-5">
+                {/* SUBMIT BUTTON */}
+                <button
+                  className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 bg-green-white-5"
+                  // onSubmit={handleSubmit}
+                  onClick={(e) => {
+                    handleSubmit(e);
+                  }}
+                >
                   Send Message
                 </button>
               </form>
+              {/* END OF FORM */}
             </div>
           </div>
         </div>
@@ -120,6 +266,18 @@ const Contact = () => {
               />
             </div>
           </Link>
+        </div>
+        <div className="text-left">
+          {showSuccessMessage && (
+            <p className="text-green-500 font-semibold text-sm my-2">
+              Thankyou! Your Message has been delivered.
+            </p>
+          )}
+          {showFailureMessage && (
+            <p className="text-red-500">
+              Oops! Something went wrong, please try again.
+            </p>
+          )}
         </div>
       </div>
     </div>
