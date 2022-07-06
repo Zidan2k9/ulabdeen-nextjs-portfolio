@@ -3,10 +3,9 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill, BsMoonFill } from "react-icons/bs";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import { TbLetterZ, TbLetterU } from "react-icons/tb";
 import { useRouter } from "next/router";
-import { ThemeButton } from "../components/ThemeButton";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,14 +13,6 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
-
-  const themeChanger = () => {
-    return (
-      <ThemeButton>
-        <BsMoonFill />
-      </ThemeButton>
-    );
-  };
 
   useEffect(() => {
     if (
@@ -71,7 +62,6 @@ const Navbar = () => {
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            {themeChanger()}
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
