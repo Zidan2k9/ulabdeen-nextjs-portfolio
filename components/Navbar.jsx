@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { MoonIcon, SunIcon } from "@heroicons/react/solid";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -8,6 +10,37 @@ import { TbLetterZ, TbLetterU } from "react-icons/tb";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "dark") {
+      return (
+        <SunIcon
+          className="w-7 h-7"
+          role="button"
+          onClick={() => setTheme("light")}
+        />
+      );
+    } else {
+      return (
+        <MoonIcon
+          className="w-7 h-7"
+          role="button"
+          onClick={() => setTheme("dark")}
+        />
+      );
+    }
+  };
+
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
@@ -81,6 +114,7 @@ const Navbar = () => {
                 Contact
               </li>
             </Link>
+            {renderThemeChanger()}
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
@@ -149,6 +183,7 @@ const Navbar = () => {
                   Contact
                 </li>
               </Link>
+              {renderThemeChanger()}
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
