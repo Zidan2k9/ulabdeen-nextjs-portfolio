@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
+import ContactUs from "../components/ContactUs";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       {/* Work Experience */}
       <Work />
       <Contact />
+      {/* <ContactUs /> */}
     </div>
   );
 }

@@ -169,11 +169,14 @@ const Contact = () => {
                       id="name"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      value={name}
                       onChange={(e) => {
                         setName(e.target.value);
                       }}
-                      required
                     />
+                    {errors?.name && (
+                      <p className="text-red-500">name can't be empty</p>
+                    )}
                   </div>
                   {/* PHONE NUMBER (OPTIONAL) */}
                   <div className="flex flex-col">
@@ -204,11 +207,14 @@ const Contact = () => {
                     id="email"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
-                    required
                   />
+                  {errors?.email && (
+                    <p className="text-red-500">Email can't be empty</p>
+                  )}
                 </div>
                 <div className="flex flex-col py-2">
                   {/* SUBJECT */}
@@ -220,11 +226,14 @@ const Contact = () => {
                     id="subject"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    value={subject}
                     onChange={(e) => {
                       setSubject(e.target.value);
                     }}
-                    required
                   />
+                  {errors.subject && (
+                    <p className="text-red-500">Subject cant be empty</p>
+                  )}
                 </div>
                 <div className="flex flex-col py-2">
                   {/* MESSAGE */}
@@ -234,13 +243,16 @@ const Contact = () => {
                   <textarea
                     name="message"
                     id="message"
+                    value={message}
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     onChange={(e) => {
                       setMessage(e.target.value);
                     }}
-                    required
                   ></textarea>
+                  {errors?.message && (
+                    <p className="text-red-500">Message cant be empty</p>
+                  )}
                 </div>
                 {/* SUBMIT BUTTON */}
                 <button
