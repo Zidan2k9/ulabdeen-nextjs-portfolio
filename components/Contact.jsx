@@ -232,7 +232,7 @@ const Contact = () => {
                     }}
                   />
                   {errors.subject && (
-                    <p className="text-red-500">Subject cant be empty</p>
+                    <p className="text-red-500">Subject can't be empty</p>
                   )}
                 </div>
                 <div className="flex flex-col py-2">
@@ -251,7 +251,7 @@ const Contact = () => {
                     }}
                   ></textarea>
                   {errors?.message && (
-                    <p className="text-red-500">Message cant be empty</p>
+                    <p className="text-red-500">Message can't be empty</p>
                   )}
                 </div>
                 {/* SUBMIT BUTTON */}
@@ -265,6 +265,19 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
+              <div className="text-left">
+                {showSuccessMessage && (
+                  <p className="text-green-500 font-semibold text-sm my-2">
+                    Thanks a million for your message, I'll get back to you
+                    soon!
+                  </p>
+                )}
+                {showFailureMessage && (
+                  <p className="text-red-500">
+                    Oops! Something went wrong, please try again.
+                  </p>
+                )}
+              </div>
               {/* END OF FORM */}
             </div>
           </div>
@@ -278,18 +291,6 @@ const Contact = () => {
               />
             </div>
           </Link>
-        </div>
-        <div className="text-left">
-          {showSuccessMessage && (
-            <p className="text-green-500 font-semibold text-sm my-2">
-              Thankyou! Your Message has been delivered.
-            </p>
-          )}
-          {showFailureMessage && (
-            <p className="text-red-500">
-              Oops! Something went wrong, please try again.
-            </p>
-          )}
         </div>
       </div>
     </div>
