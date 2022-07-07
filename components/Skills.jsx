@@ -41,8 +41,9 @@ const Skills = () => {
         </p>
         <h2 className="py-4">Technologies I Work With</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+          {/* start of skills tiles */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center ">
               <div className="m-auto">
                 <FaHtml5 color="orange" size={64} />
               </div>
@@ -52,7 +53,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaCss3 color="blue" size={64} />
@@ -63,7 +64,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiTailwindcss color="turquoise" size={64} />
@@ -74,7 +75,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaJs color="yellow" size={64} />
@@ -85,7 +86,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaReact color="skyblue" size={64} />
@@ -96,7 +97,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiNextdotjs color="black" size={64} />
@@ -107,7 +108,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiExpress size={64} />
@@ -118,7 +119,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaNode color="green" size={64} />
@@ -129,7 +130,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaUnity size={64} />
@@ -140,7 +141,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaGitAlt color="red" size={64} />
@@ -151,7 +152,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiAndroidstudio color="green" size={64} />
@@ -162,7 +163,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaJava color="orange" size={64} />
@@ -173,7 +174,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaLinux size={64} />
@@ -184,7 +185,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaPython size={64} />
@@ -195,7 +196,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <DiDjango size={64} />
@@ -206,7 +207,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiMongodb color="green" size={64} />
@@ -217,7 +218,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiCsharp color="purple" size={64} />
@@ -228,7 +229,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaEye size={64} />
@@ -239,7 +240,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiTensorflow color="orange" size={64} />
@@ -250,7 +251,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiMicrosoftazure color="skyblue" size={64} />
@@ -261,7 +262,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiMysql color="aqua" size={64} />
@@ -272,7 +273,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiJirasoftware color="blue" size={64} />
@@ -283,7 +284,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiPostgresql color="blue" size={64} />
@@ -294,7 +295,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <GiArtificialIntelligence size={64} />
@@ -305,18 +306,18 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <TbApi size={64} />
               </div>
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center dark:shadow-green-400">
                 <h3>REST API</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiPostman color="orange" size={64} />
@@ -327,7 +328,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <SiVmware color="gray" size={64} />
@@ -338,7 +339,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <GrVirtualMachine size={64} />
@@ -349,7 +350,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <GrWindows size={64} />

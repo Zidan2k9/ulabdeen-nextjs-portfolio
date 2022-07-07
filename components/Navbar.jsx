@@ -92,6 +92,7 @@ const Navbar = () => {
             <TbLetterZ color="purple" size={25} />
             <TbLetterU color="black" size={25} />
           </div>
+          {/* MAIN NAV */}
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -130,10 +131,11 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 dark:bg-black"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
+          {/* MOBILE RESPONSIVE DIV */}
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="#home">
@@ -145,12 +147,12 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer dark:shadow-green-400 dark:bg-black"
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
+            <div className="border-b border-gray-300 my-4 dark:border-green-300">
               <p className="w-[85%] md:w-[90%] py-4">
                 I Love To Bring Websites To Life!
               </p>
@@ -186,20 +188,20 @@ const Navbar = () => {
               {renderThemeChanger()}
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#5651e5] dark:text-white">
                 Get To Know Me!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <BsFillPersonLinesFill />
                 </div>
               </div>

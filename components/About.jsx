@@ -33,7 +33,7 @@ const About = () => {
             My most recent projects can be found here
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-green-white-9 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto shadow-xl shadow-green-white-9 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 dark:shadow-green-400">
           <img
             className="rounded-xl"
             src="https://source.unsplash.com/LKsHwgzyk7c"

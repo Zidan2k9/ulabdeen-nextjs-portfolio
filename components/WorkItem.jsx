@@ -16,7 +16,7 @@ const WorkItem = ({ title, technologies, backgroundImg, workUrl }) => {
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{technologies}</p>
         <Link href={workUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer dark:bg-gray-700 dark:text-white">
             More Info
           </p>
         </Link>
