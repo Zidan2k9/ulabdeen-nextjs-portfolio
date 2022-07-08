@@ -40,7 +40,7 @@ async function sendEmail(req, res) {
             </html>`,
     });
   } catch (err) {
-    console.log(error);
+    console.log(err);
     return res.status(err.statusCode || 500).json({ err: err.message });
   }
   return res.status(200).json({ error: "" });
