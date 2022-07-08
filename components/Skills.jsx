@@ -27,6 +27,7 @@ import {
   SiTailwindcss,
   SiExpress,
   SiPostman,
+  SiVirtualbox,
 } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { GrVirtualMachine, GrWindows } from "react-icons/gr";
@@ -56,7 +57,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <FaCss3 color="blue" size={64} />
+                <FaCss3 size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
@@ -100,7 +101,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <SiNextdotjs color="black" size={64} />
+                <SiNextdotjs size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Next.js</h3>
@@ -276,7 +277,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <SiJirasoftware color="blue" size={64} />
+                <SiJirasoftware size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JIRA Software</h3>
@@ -287,7 +288,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <SiPostgresql color="blue" size={64} />
+                <SiPostgresql size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>PostgreSQL</h3>
@@ -331,7 +332,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <SiVmware color="gray" size={64} />
+                <SiVmware size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>VMWare ESXi, VMWare vSphere and VMWare Workstation</h3>
@@ -342,7 +343,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <GrVirtualMachine size={64} />
+                <SiVirtualbox size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Virtualisation</h3>
