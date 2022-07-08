@@ -175,7 +175,7 @@ const Contact = () => {
                       }}
                     />
                     {errors?.name && (
-                      <p className="text-red-500">name can't be empty</p>
+                      <p className="text-red-500">Name can't be empty</p>
                     )}
                   </div>
                   {/* PHONE NUMBER (OPTIONAL) */}
@@ -269,13 +269,13 @@ const Contact = () => {
               </form>
               <div className="text-left">
                 {showSuccessMessage && (
-                  <p className="text-green-500 font-semibold text-sm my-2">
+                  <p className="text-green-500 font-semibold text-sm my-2 dark:text-white">
                     Thanks a million for your message, I'll get back to you
                     soon!
                   </p>
                 )}
                 {showFailureMessage && (
-                  <p className="text-red-500">
+                  <p className="text-red-500 dark:text-white">
                     Oops! Something went wrong, please try again.
                   </p>
                 )}
