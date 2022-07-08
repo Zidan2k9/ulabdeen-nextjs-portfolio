@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-const Qualifications = () => {
-  return <div>Qualifications</div>;
-};
+// const Qualifications = () => {
+//   return <div>Qualifications</div>;
+// };
 
-export default Qualifications;
+// export default Qualifications;
