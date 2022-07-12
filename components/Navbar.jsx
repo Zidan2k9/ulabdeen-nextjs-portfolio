@@ -115,7 +115,7 @@ const Navbar = () => {
                 Contact
               </li>
             </Link>
-            {renderThemeChanger()}
+            <div>{renderThemeChanger()}</div>
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
@@ -185,7 +185,7 @@ const Navbar = () => {
                   Contact
                 </li>
               </Link>
-              {renderThemeChanger()}
+              <div>{renderThemeChanger()}</div>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5] dark:text-white">
