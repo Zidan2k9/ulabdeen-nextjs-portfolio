@@ -29,22 +29,22 @@ const Main = () => {
             possimus at pariatur.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
               <FaLinkedinIn />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
               <FaGithub />
             </div>
-            {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300'>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
               <FaStackOverflow />
             </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300'>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
               <FaHackerrank />
-            </div> */}
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
               <AiOutlineMail />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
               <BsFillPersonFill />
             </div>
           </div>

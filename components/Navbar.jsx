@@ -4,7 +4,12 @@ import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "@heroicons/react/solid";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaHackerrank,
+  FaStackOverflow,
+} from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { TbLetterZ, TbLetterU } from "react-icons/tb";
 import { useRouter } from "next/router";
@@ -141,8 +146,8 @@ const Navbar = () => {
               <Link href="#home">
                 {/* <Image src='/../public/assets/navLogo.png' width='87' height='35' alt='Portfolio Logo written in green with a white background, Zain Ul-Abdeen, Mobile Nav Menu' /> */}
                 <div className="tracking-tighter">
-                  <TbLetterZ color="purple" size={25} />
-                  <TbLetterU color="black" size={25} />
+                  <TbLetterZ color="green" size={25} />
+                  <TbLetterU color="green" size={25} />
                 </div>
               </Link>
               <div
@@ -188,20 +193,26 @@ const Navbar = () => {
               <div>{renderThemeChanger()}</div>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5] dark:text-white">
+              <p className="uppercase tracking-widest text-green-400 dark:text-white">
                 Get To Know Me!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                  <FaStackOverflow />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                  <FaHackerrank />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                   <BsFillPersonLinesFill />
                 </div>
               </div>
