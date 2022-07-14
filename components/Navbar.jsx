@@ -10,9 +10,13 @@ import {
   FaHackerrank,
   FaStackOverflow,
 } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import {
+  BsFillPersonLinesFill,
+  BsFillFileEarmarkPdfFill,
+} from "react-icons/bs";
 import { TbLetterZ, TbLetterU } from "react-icons/tb";
 import { useRouter } from "next/router";
+import { SiDevdotto } from "react-icons/si";
 
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -94,8 +98,8 @@ const Navbar = () => {
         <Link href="/#home">
           {/* <Image src="/../public/assets/navLogo.png" alt="Portfolio Logo written in green with a white background, Zain Ul-Abdeen" width='125' height='50' /> */}
           <div className="tracking-tighter cursor-pointer">
-            <TbLetterZ color="purple" size={25} />
-            <TbLetterU color="black" size={25} />
+            <TbLetterZ color="white" size={25} />
+            <TbLetterU color="white" size={25} />
           </div>
           {/* MAIN NAV */}
         </Link>
@@ -196,25 +200,50 @@ const Navbar = () => {
               <p className="uppercase tracking-widest text-green-400 dark:text-white">
                 Get To Know Me!
               </p>
+              <div className="border-b border-gray-300 my-4 dark:border-green-300"></div>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
-                  <FaStackOverflow />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
-                  <FaHackerrank />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
-                  <BsFillPersonLinesFill />
-                </div>
+                {/* LinkedIn  */}
+                <a href="https://www.linkedin.com/zainulabdeen1">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                {/* GitHub  */}
+                <a href="https://www.github.com/Zidan2k9">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <FaGithub />
+                  </div>
+                </a>
+                {/* StackOverFlow  */}
+                <a href="https://stackoverflow.com/users/2850499/zain-ul-abdeen">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <FaStackOverflow />
+                  </div>
+                </a>
+                {/* Dev.to  */}
+                <a href="https://www.dev.to/zainulabdeen">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <SiDevdotto />
+                  </div>
+                </a>
+                {/* HackerRank  */}
+                <a href="https://www.hackerrank.com/ulabdeen">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <FaHackerrank />
+                  </div>
+                </a>
+                {/* Mail */}
+                <a href="mailto:ieulabdeen.zain@gmail.com">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <AiOutlineMail />
+                  </div>
+                </a>
+                {/* CV PDF download */}
+                <a href="/">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
+                    <BsFillFileEarmarkPdfFill />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

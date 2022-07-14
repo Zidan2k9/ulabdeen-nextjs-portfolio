@@ -1,12 +1,13 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillPersonFill, BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import {
   FaGithub,
   FaHackerrank,
   FaLinkedinIn,
   FaStackOverflow,
 } from "react-icons/fa";
+import { SiDevdotto } from "react-icons/si";
 
 const Main = () => {
   return (
@@ -29,24 +30,48 @@ const Main = () => {
             possimus at pariatur.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
-              <FaLinkedinIn />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
-              <FaStackOverflow />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
-              <FaHackerrank />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
-              <AiOutlineMail />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
-              <BsFillPersonFill />
-            </div>
+            {/* Linkedin */}
+            <a href="https://www.linkedin.com/zainulabdeen1">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <FaLinkedinIn />
+              </div>
+            </a>
+            {/* GitHub */}
+            <a href="https://www.github.com/Zidan2k9">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <FaGithub />
+              </div>
+            </a>
+            {/* StackOverflow */}
+            <a href="https://stackoverflow.com/users/2850499/zain-ul-abdeen">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <FaStackOverflow />
+              </div>
+            </a>
+            {/* Dev.to  */}
+            <a href="https://dev.to/zainulabdeen">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <SiDevdotto />
+              </div>
+            </a>
+            {/* HankerRank  */}
+            <a href="https://www.hackerrank.com/ulabdeen">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <FaHackerrank />
+              </div>
+            </a>
+            {/* Email  */}
+            <a href="mailto:ieulabdeen.zain@gmail.com">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <AiOutlineMail />
+              </div>
+            </a>
+            {/* CV download link  */}
+            <a href="/">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
+                <BsFillFileEarmarkPdfFill />
+              </div>
+            </a>
           </div>
         </div>
       </div>
