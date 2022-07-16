@@ -1,9 +1,7 @@
 import React from "react";
 import WorkItem from "./WorkItem";
 import propertyImg from "../public/assets/projects/property.jpg";
-import crypto from "../public/assets/projects/crypto.jpg";
-import netflix from "../public/assets/projects/netflix.jpg";
-import twitch from "../public/assets/projects/twitch.jpg";
+import lunar_destiny from "../public/assets/projects/lunar_destiny.png";
 
 const Work = () => {
   return (
@@ -15,28 +13,16 @@ const Work = () => {
         <h2 className="py-4">Work Experience and Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <WorkItem
-            title="Property Finder"
+            title="Project Template"
             technologies="ReactJS"
             backgroundImg={propertyImg}
-            workUrl="/property"
+            workUrl="/project_template"
           />
           <WorkItem
-            title="Crypto App"
-            technologies="ReactJS"
-            backgroundImg={crypto}
-            workUrl="/crypto_app"
-          />
-          <WorkItem
-            title="Netflix Clone"
-            technologies="ReactJS"
-            backgroundImg={netflix}
-            workUrl="/netflix_clone"
-          />
-          <WorkItem
-            title="Twitch Clone"
-            technologies="ReactJS"
-            backgroundImg={twitch}
-            workUrl="/twitch_clone"
+            title="Lunar Destiny"
+            technologies="Unity3D Game Engine, C# and JavaScript"
+            backgroundImg={lunar_destiny}
+            workUrl="/work_experience"
           />
         </div>
       </div>

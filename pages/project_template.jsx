@@ -17,8 +17,10 @@ const property = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Property Finder</h2>
-          <h3>React JS / Tailwind CSS/ Firebase</h3>
+          <h2 className="py-2 dark:text-green-600">Property Finder</h2>
+          <h3 className="dark:text-green-700">
+            React JS / Tailwind CSS/ Firebase
+          </h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
@@ -50,25 +52,33 @@ const property = () => {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-green-400 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Stack</p>
+            <p className="text-center font-bold pb-2 dark:text-green-400">
+              Stack
+            </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-green-800 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+              <p className="text-green-800 py-2 flex items-center dark:text-green-400">
+                <RiRadioButtonFill className="pr-1 dark:text-green-400 dark:shadow-xl" />{" "}
+                React
               </p>
-              <p className="text-green-800 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind CSS
+              <p className="text-green-800 py-2 flex items-center dark:text-green-400">
+                <RiRadioButtonFill className="pr-1 dark:text-green-400 dark:shadow-xl" />{" "}
+                Tailwind CSS
               </p>
-              <p className="text-green-800 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> JavaScript
+              <p className="text-green-800 py-2 flex items-center dark:text-green-400">
+                <RiRadioButtonFill className="pr-1 dark:text-green-400 dark:shadow-xl" />{" "}
+                JavaScript
               </p>
-              <p className="text-green-800 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
+              <p className="text-green-800 py-2 flex items-center dark:text-green-400">
+                <RiRadioButtonFill className="pr-1 dark:text-green-400 dark:shadow-xl" />{" "}
+                Firebase
               </p>
-              <p className="text-green-800 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Google API
+              <p className="text-green-800 py-2 flex items-center dark:text-green-400">
+                <RiRadioButtonFill className="pr-1 dark:text-green-400 dark:shadow-xl" />{" "}
+                Google API
               </p>
-              <p className="text-green-800 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Zillow API
+              <p className="text-green-800 py-2 flex items-center dark:text-green-400">
+                <RiRadioButtonFill className="pr-1 dark:text-green-400 dark:shadow-xl" />{" "}
+                Zillow API
               </p>
             </div>
           </div>

@@ -43,7 +43,7 @@ const Skills = () => {
         <h2 className="py-4">Technologies I Work With</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* start of skills tiles */}
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-orange-400">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center ">
               <div className="m-auto">
                 <FaHtml5 color="orange" size={64} />
@@ -54,7 +54,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-blue-400">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-green-400">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <FaCss3 size={64} />
@@ -335,7 +335,7 @@ const Skills = () => {
                 <SiVmware size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>VMWare ESXi, VMWare vSphere and VMWare Workstation</h3>
+                <h3>VMWare ESXi, vSphere and Workstation</h3>
               </div>
             </div>
           </div>
@@ -357,7 +357,7 @@ const Skills = () => {
                 <GrWindows size={64} />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Windows and Windows Server 2016</h3>
+                <h3>Windows Server 2016</h3>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import {
   FaGithub,
   FaHackerrank,
@@ -132,24 +132,36 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
-                    <FaGithub />
-                  </div>
+                  <a href="https://www.linkedin.com/zainulabdeen1">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/Zidan2k9">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+                      <FaGithub />
+                    </div>
+                  </a>
+
+                  <a href="mailto:ieulabdeen.zain@gmail.com">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+                      <AiOutlineMail />
+                    </div>
+                  </a>
+
+                  <a href="/">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
+                      <BsFillFileEarmarkPdfFill />
+                    </div>
+                  </a>
+
                   {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300'>
               <FaStackOverflow />
             </div>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300'>
               <FaHackerrank />
             </div> */}
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
-                    <BsFillPersonFill />
-                  </div>
                 </div>
               </div>
             </div>
