@@ -2,6 +2,7 @@ import React from "react";
 import WorkItem from "./WorkItem";
 import propertyImg from "../public/assets/projects/property.jpg";
 import lunar_destiny from "../public/assets/projects/lunar_destiny.png";
+import real_estate from "../public/assets/projects/real_estate.png";
 
 const Work = () => {
   return (
@@ -24,6 +25,18 @@ const Work = () => {
             backgroundImg={lunar_destiny}
             workUrl="/work_experience"
           />
+          <WorkItem
+            title="Full Stack Real Estate Website"
+            technologies="Bootstrap, Python, Django, PostgreSQL"
+            backgroundImg={real_estate}
+            workUrl="/real_estate_website"
+          />
+          {/* <WorkItem
+            title="Facial Recognition Web App"
+            technologies="CSS, JavaScript, Node, React, PostgreSQL and Postman"
+            backgroundImg={facial_recognition}
+            workUrl="/facial_recognition"
+          /> */}
         </div>
       </div>
     </div>

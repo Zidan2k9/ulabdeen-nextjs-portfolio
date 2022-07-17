@@ -4,7 +4,7 @@ import React from "react";
 import lunar_destiny from "../public/assets/projects/lunar_destiny.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const property = () => {
+const work_experience = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -131,4 +131,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default work_experience;
