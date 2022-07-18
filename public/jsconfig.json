@@ -1,0 +1,6 @@
+// create a jsconfig.json file in your root dir(where package.json is located) and add this:
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
+}
