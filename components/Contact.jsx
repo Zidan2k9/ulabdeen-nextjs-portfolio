@@ -153,11 +153,11 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <Link href="/">
+                  <a href="https://drive.google.com/file/d/1tGK-xuVFI8aklsSIclIBruHjTYMTa9i6/view?usp=sharing">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
                       <BsFillFileEarmarkPdfFill />
                     </div>
-                  </Link>
+                  </a>
 
                   {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300'>
               <FaStackOverflow />
