@@ -3,6 +3,8 @@ import WorkItem from "./WorkItem";
 import propertyImg from "../public/assets/projects/property.jpg";
 import lunar_destiny from "../public/assets/projects/lunar_destiny.png";
 import real_estate from "../public/assets/projects/real_estate.png";
+import smart_brain_img from "../public/assets/projects/smart_brain.png";
+import contacts_keeper from "../public/assets/projects/contacts_keeper.png";
 
 const Work = () => {
   return (
@@ -31,12 +33,18 @@ const Work = () => {
             backgroundImg={real_estate}
             workUrl="/real_estate_website"
           />
-          {/* <WorkItem
-            title="Facial Recognition Web App"
+          <WorkItem
+            title=" Smart Brain Facial Recognition Web App"
             technologies="CSS, JavaScript, Node, React, PostgreSQL and Postman"
-            backgroundImg={facial_recognition}
-            workUrl="/facial_recognition"
-          /> */}
+            backgroundImg={smart_brain_img}
+            workUrl="/smart_brain_website"
+          />
+          <WorkItem
+            title="Contacts Keeper MERN App"
+            technologies="React, Node, Express, MongoDB"
+            backgroundImg={contacts_keeper}
+            workUrl="/contacts_keeper_app"
+          />
         </div>
       </div>
     </div>
