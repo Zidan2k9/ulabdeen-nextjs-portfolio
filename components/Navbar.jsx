@@ -58,10 +58,10 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/property" ||
-      router.asPath === "/crypto_app" ||
-      router.asPath === "/nextflix_clone" ||
-      router.asPath === "/twitch_clone"
+      router.asPath === "/contacts_keeper_app" ||
+      router.asPath === "/real_estate_website" ||
+      router.asPath === "/smart_brain_website" ||
+      router.asPath === "/work_experience"
     ) {
       setNavBg("transparent");
       setLinkColor("#12844D");
