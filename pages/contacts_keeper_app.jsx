@@ -60,17 +60,17 @@ const contact_keeper_app = () => {
             <li>
               Hooks were used to break down app functionality in the following
               structure: State, Context and Reducer. State and Context files
-              contained a component's functionality while a reducer was used to
-              communicate with the MongoDB cluster. The components for the
-              contacts, alerts and user authentication were implemented using
-              this structure.
+              contained a component&apos;s functionality while a reducer was
+              used to communicate with the MongoDB cluster. The components for
+              the contacts, alerts and user authentication were implemented
+              using this structure.
             </li>
             <li>
               JSON Web Tokens provided a layer of authentication to prevent
               non-logged in users from accessing private routes. Each user is
               assigned their own web token, the web token is destroyed upon
-              logging out, ensuring that a user's contacts are not visible to
-              anyone else.
+              logging out, ensuring that a user&apos;s contacts are not visible
+              to anyone else.
             </li>
           </ul>
 

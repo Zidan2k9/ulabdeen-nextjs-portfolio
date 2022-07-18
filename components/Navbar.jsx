@@ -239,11 +239,11 @@ const Navbar = () => {
                   </div>
                 </a>
                 {/* CV PDF download */}
-                <a href="/">
+                <Link href="/">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                     <BsFillFileEarmarkPdfFill />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

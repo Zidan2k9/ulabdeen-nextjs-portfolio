@@ -29,11 +29,11 @@ const real_estate_website = () => {
             Estate. The primary goal of this project was to improve my skills
             with Python, to gain a better understanding of backend web
             development and to treat this website as a real world project given
-            to me by a client with a set of requirements. The website use's
-            Python's Django framework combined with PostgreSQL to allow users to
-            admin the content of the website. Admin users can add, delete and
-            edit details of property listings and the realtors associated with
-            the listings. Property enquiries can also be viewed.
+            to me by a client with a set of requirements. The website use&apos;s
+            Python&apos;s Django framework combined with PostgreSQL to allow
+            users to admin the content of the website. Admin users can add,
+            delete and edit details of property listings and the realtors
+            associated with the listings. Property enquiries can also be viewed.
           </p>
 
           <p>Features:</p>
@@ -62,29 +62,30 @@ const real_estate_website = () => {
               models are created by Django and then migrated to PostgreSQL.
             </li>
             <li>
-              The project's development environment was enclosed in a 'virtual
-              environment' to isolate project files and library dependencies
-              ensuring there would be no clashes with the libraries contained on
-              the local machine. All requirements were tested locally including
-              a local instance of the database before deploying the website on a
-              Digital Ocean Linux Ubuntu droplet. The droplet was protected by
-              SSH authentication and was accessed using PuTTy.
+              The project&apos;s development environment was enclosed in a
+              &apos;virtual environment&apos; to isolate project files and
+              library dependencies ensuring there would be no clashes with the
+              libraries contained on the local machine. All requirements were
+              tested locally including a local instance of the database before
+              deploying the website on a Digital Ocean Linux Ubuntu droplet. The
+              droplet was protected by SSH authentication and was accessed using
+              PuTTy.
             </li>
             <li>
               To replicate the development environment on Ubuntu a number of
               tasks were performed. These included creating a new user and
               giving them root priviliges, enabling the firewall, installing a
               number of software packages (Python, Postgres and NGinx). A
-              PostgreSQL database was created and the project's code was cloned
-              from the repository. Migrations were performed to create tables
-              based on the table models of each app in the project.
+              PostgreSQL database was created and the project&apos;s code was
+              cloned from the repository. Migrations were performed to create
+              tables based on the table models of each app in the project.
             </li>
             <li>
-              Gunicorn was used in combination with NGinx to replace Django's
-              local deployment functionality and instead deploy the website
-              globally. The website can be accessed using the IP address of the
-              Linux droplet. This website is solely part of my portfolio and for
-              this reason I have not assigned a domain for it.
+              Gunicorn was used in combination with NGinx to replace
+              Django&apos;s local deployment functionality and instead deploy
+              the website globally. The website can be accessed using the IP
+              address of the Linux droplet. This website is solely part of my
+              portfolio and for this reason I have not assigned a domain for it.
             </li>
           </ul>
 

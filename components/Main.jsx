@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonFill, BsFillFileEarmarkPdfFill } from "react-icons/bs";
 import {
@@ -18,10 +19,10 @@ const Main = () => {
             I LOVE TO BRING WEBSITES TO LIFE!
           </p>
           <h1 className="py-4 text-green-white-8">
-            Hello, I'm <span className="text-green-white-5">Zain</span>
+            Hello, I&apos;m <span className="text-green-white-5">Zain</span>
           </h1>
           <h1 className="py-2 text-green-white-10">
-            I'm A Passionate Software Developer
+            I&apos;m A Passionate Software Developer
           </h1>
           <p className="py-4 text-green-white-10 max-w-[70%] m-auto">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
@@ -67,11 +68,11 @@ const Main = () => {
               </div>
             </a>
             {/* CV download link  */}
-            <a href="/">
+            <Link href="/">
               <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
                 <BsFillFileEarmarkPdfFill />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

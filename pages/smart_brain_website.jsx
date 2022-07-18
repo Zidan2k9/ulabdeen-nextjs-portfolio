@@ -30,9 +30,9 @@ const smart_brain = () => {
             Smart Brain is a facial image recognition website that reads an
             image URL given by the user. Using this URL, Smart Brain displays
             the image and then highlights a face that is present. For the time
-            being Smart Brain doesn't support multiple faces. Users can register
-            and sign in and the website will keep track of the number of entries
-            made by the user.
+            being Smart Brain doesn&apos;t support multiple faces. Users can
+            register and sign in and the website will keep track of the number
+            of entries made by the user.
           </p>
 
           <a href="https://smart-brain-zain.herokuapp.com/">

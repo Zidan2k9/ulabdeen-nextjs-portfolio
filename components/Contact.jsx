@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
@@ -110,15 +111,17 @@ const Contact = () => {
         <p className="text-xl tracking-widest uppercase text-green-white-8 dark:text-white">
           Contact Me
         </p>
-        <h2 className="py-4">Let's Get In Touch</h2>
+        <h2 className="py-4">Let&apos;s Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 dark:shadow-green-400">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src="https://source.unsplash.com/npxXWgQ33ZQ"
+                  width="1080"
+                  height="719"
                   alt=""
                 />
               </div>
@@ -126,7 +129,7 @@ const Contact = () => {
                 <h2 className="py-2">Zain Ul-Abdeen</h2>
                 <p>Software Developer</p>
                 <p className="py-4">
-                  I am looking for full-time roles. Let's Talk!
+                  I am looking for full-time roles. Let&apos;s Talk!
                 </p>
               </div>
               <div>
@@ -150,11 +153,11 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <a href="/">
+                  <Link href="/">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
                       <BsFillFileEarmarkPdfFill />
                     </div>
-                  </a>
+                  </Link>
 
                   {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300'>
               <FaStackOverflow />
@@ -187,7 +190,7 @@ const Contact = () => {
                       }}
                     />
                     {errors?.name && (
-                      <p className="text-red-500">Name can't be empty</p>
+                      <p className="text-red-500">Name can&apos;t be empty</p>
                     )}
                   </div>
                   {/* PHONE NUMBER (OPTIONAL) */}
@@ -225,7 +228,7 @@ const Contact = () => {
                     }}
                   />
                   {errors?.email && (
-                    <p className="text-red-500">Email can't be empty</p>
+                    <p className="text-red-500">Email can&apos;t be empty</p>
                   )}
                 </div>
                 <div className="flex flex-col py-2">
@@ -244,7 +247,7 @@ const Contact = () => {
                     }}
                   />
                   {errors.subject && (
-                    <p className="text-red-500">Subject can't be empty</p>
+                    <p className="text-red-500">Subject can&apos;t be empty</p>
                   )}
                 </div>
                 <div className="flex flex-col py-2">
@@ -264,7 +267,7 @@ const Contact = () => {
                   ></textarea>
                   {errors?.message && (
                     <p className="text-red-500 dark:shadow-green-500">
-                      Message can't be empty
+                      Message can&apos;t be empty
                     </p>
                   )}
                 </div>
@@ -282,7 +285,7 @@ const Contact = () => {
               <div className="text-left">
                 {showSuccessMessage && (
                   <p className="text-green-500 font-semibold text-sm my-2 dark:text-white">
-                    Thanks a million for your message, I'll get back to you
+                    Thanks a million for your message, I&apos;ll get back to you
                     soon!
                   </p>
                 )}
