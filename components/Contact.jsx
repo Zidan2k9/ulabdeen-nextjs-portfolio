@@ -135,7 +135,7 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <a href="https://www.linkedin.com/zainulabdeen1">
+                  <a href="https://www.linkedin.com/in/zainulabdeen1/">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-300 dark:shadow-green-400">
                       <FaLinkedinIn />
                     </div>

@@ -203,7 +203,7 @@ const Navbar = () => {
               <div className="border-b border-gray-300 my-4 dark:border-green-300"></div>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80]">
                 {/* LinkedIn  */}
-                <a href="https://www.linkedin.com/zainulabdeen1">
+                <a href="https://www.linkedin.com/in/zainulabdeen1/">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in duration-300 dark:shadow-green-400 dark:bg-black">
                     <FaLinkedinIn />
                   </div>

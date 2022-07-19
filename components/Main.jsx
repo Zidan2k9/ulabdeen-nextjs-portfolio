@@ -32,7 +32,7 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             {/* Linkedin */}
-            <a href="https://www.linkedin.com/zainulabdeen1">
+            <a href="https://www.linkedin.com/in/zainulabdeen1/">
               <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-150 ease-in-out duration-300 dark:shadow-green-400">
                 <FaLinkedinIn />
               </div>
