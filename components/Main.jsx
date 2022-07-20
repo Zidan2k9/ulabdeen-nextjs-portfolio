@@ -16,7 +16,7 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-green-white-10">
-            I LOVE TO BRING WEBSITES TO LIFE!
+            Creating solutions and learning along the way!
           </p>
           <h1 className="py-4 text-green-white-8">
             Hello, I&apos;m <span className="text-green-white-5">Zain</span>
@@ -25,10 +25,10 @@ const Main = () => {
             I&apos;m A Passionate Software Developer
           </h1>
           <p className="py-4 text-green-white-10 max-w-[70%] m-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-            quae sequi adipisci et labore. Maiores laboriosam minus eum fugit
-            modi excepturi, quaerat temporibus dolores ab consequuntur, omnis
-            possimus at pariatur.
+            I'm a life-long learner with a passion for Software Development,
+            throughout the years I have had the opportunity to work with a wide
+            range of technologies. You can checkout my projects and skills
+            below!
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             {/* Linkedin */}

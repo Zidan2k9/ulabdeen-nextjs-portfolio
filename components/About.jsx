@@ -14,21 +14,23 @@ const About = () => {
           </p>
           <h2 className="py-4">My Journey</h2>
           <p className="py-2 text-green-white-9">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis,
-            deserunt.
+            I&apos;m a MSc Private Cloud Technologies graduate from the Atlantic
+            Technical University, Letterkenny. Currently looking for full-time
+            roles in Software Development.
           </p>
           <p className="py-2 text-green-white-9">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Laudantium, tenetur eligendi fugiat vel minima est corporis harum
-            voluptatem beatae expedita neque voluptatum inventore officiis?
-            Dicta assumenda debitis eos beatae sit!
+            I have also completed Level 7 and Level 8 BSc degrees in Computing
+            and Computer Games Development between the years of 2012-2016 from
+            the Letterkenny Institute of Technology (now ATU, Letterkenny)
           </p>
           <p className="py-2 text-green-white-9">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque
-            ipsam molestiae pariatur incidunt quod impedit error dolore nisi?
-            Delectus eligendi dolores odit ad laborum sed animi doloribus
-            obcaecati dolorum autem aperiam fugiat quae suscipit provident
-            distinctio, sunt voluptatibus nisi.
+            In between my studies, I changed my focus from Games Development to
+            Full Stack Development and learned how to design and implement user
+            requirements for websites and web apps with technologiess including
+            CSS, JavaScript, React, Express.js, Python, Django and MongoDB.
+            Following the completion of my studies, I have been improving my
+            skillset on a daily basis and learning new technologies when
+            required.
           </p>
           <p className="py-2 text-green-white-9 underline cursor-pointer">
             My most recent projects can be found here
