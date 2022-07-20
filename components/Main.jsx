@@ -25,10 +25,10 @@ const Main = () => {
             I&apos;m A Passionate Software Developer
           </h1>
           <p className="py-4 text-green-white-10 max-w-[70%] m-auto">
-            I'm a life-long learner with a passion for Software Development,
-            throughout the years I have had the opportunity to work with a wide
-            range of technologies. You can checkout my projects and skills
-            below!
+            I&apos;m a life-long learner with a passion for Software
+            Development, throughout the years I have had the opportunity to work
+            with a wide range of technologies. You can checkout my projects and
+            skills below!
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             {/* Linkedin */}

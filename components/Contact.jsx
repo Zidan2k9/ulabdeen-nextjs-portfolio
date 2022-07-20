@@ -11,6 +11,7 @@ import {
   FaStackOverflow,
 } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import profile_pic from "../public/assets/projects/profile_pic.jpg";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -119,9 +120,9 @@ const Contact = () => {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="https://source.unsplash.com/npxXWgQ33ZQ"
-                  width="1080"
-                  height="719"
+                  src={profile_pic}
+                  width="577"
+                  height="846"
                   alt=""
                 />
               </div>

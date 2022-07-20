@@ -61,7 +61,10 @@ const Navbar = () => {
       router.asPath === "/contacts_keeper_app" ||
       router.asPath === "/real_estate_website" ||
       router.asPath === "/smart_brain_website" ||
-      router.asPath === "/work_experience"
+      router.asPath === "/work_experience" ||
+      router.asPath === "/masters_project" ||
+      router.asPath === "/fourth_year_project" ||
+      router.asPath === "/third_year_project"
     ) {
       setNavBg("transparent");
       setLinkColor("#12844D");
@@ -163,7 +166,7 @@ const Navbar = () => {
             </div>
             <div className="border-b border-gray-300 my-4 dark:border-green-300">
               <p className="w-[85%] md:w-[90%] py-4">
-                I Love To Bring Websites To Life!
+                Creating solutions and learning along the way!
               </p>
             </div>
           </div>
