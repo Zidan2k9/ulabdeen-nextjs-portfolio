@@ -1,6 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
-import contacts_keeper from "../public/assets/projects/contacts_keeper.png";
+import msc_project_indoor_test from "../public/assets/projects/msc_project_indoor_test_moment.jpg";
 import fourth_year_project_img from "../public/assets/projects/finalyearproject_resized.jpg";
 import third_year_project_img from "../public/assets/projects/escape.jpg";
 
@@ -16,7 +16,7 @@ const AcademicProjects = () => {
           <WorkItem
             title="MSc - Smartphone Based Real-Time Object Detection Solution To Aid In Navigation For Individuals With Physical Disabilities"
             technologies="Android Studio, Deep Learning, Google Colab"
-            backgroundImg={contacts_keeper}
+            backgroundImg={msc_project_indoor_test}
             workUrl="/masters_project"
           />
 

@@ -77,6 +77,22 @@ const work_experience = () => {
               Demo Video
             </button>
           </a>
+          <a href="https://gust.com/companies/lunar-experiences">
+            <button className="px-8 py-2 mt-4 mr-8 text-green-100">
+              LE Company Info
+            </button>
+          </a>
+          <a href="https://www.facebook.com/LunarExperiences/">
+            <button className="px-8 py-2 mt-4 mr-8 text-green-100">
+              LE Facebook Page
+            </button>
+          </a>
+
+          <a href="https://twitter.com/Signalunar">
+            <button className="px-8 py-2 mt-4 mr-8 text-green-100">
+              LE Twitter
+            </button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-green-400 rounded-xl p-4">
           <div className="p-2">

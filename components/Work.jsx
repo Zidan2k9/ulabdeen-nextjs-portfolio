@@ -15,7 +15,7 @@ const Work = () => {
         <h2 className="py-4">Work Experience and Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <WorkItem
-            title="Lunar Destiny"
+            title="Lunar Destiny (Work Experience)"
             technologies="Unity3D Game Engine, C# and JavaScript"
             backgroundImg={lunar_destiny}
             workUrl="/work_experience"

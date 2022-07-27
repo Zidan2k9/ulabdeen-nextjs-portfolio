@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import contacts_keeper from "../public/assets/projects/contacts_keeper.png";
+import msc_image from "../public/assets/projects/msc_project_indoor_test_moment.jpg";
 import msc_software_design from "../public/assets/projects/msc_software_design.png";
 import msc_distance_estimation from "../public/assets/projects/msc_distance_estimation.png";
 import { RiRadioButtonFill } from "react-icons/ri";
@@ -15,7 +15,7 @@ const masters_project = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={contacts_keeper}
+          src={msc_image}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -158,9 +158,14 @@ const masters_project = () => {
               GitHub repository
             </button>
           </a>
-          <a href="https://youtu.be/e8I-0vD6KfQ">
+          <a href="https://www.youtube.com/watch?v=XCmgAoGpyy0">
             <button className="px-8 py-2 mt-4 mr-8 text-green-100">
-              Video Demo
+              Indoor Test Demo Video
+            </button>
+          </a>
+          <a href="https://youtu.be/0oNuQ3KI1OM">
+            <button className="px-8 py-2 mt-4 mr-8 text-green-100">
+              Outdoor Test Demo Video
             </button>
           </a>
         </div>
